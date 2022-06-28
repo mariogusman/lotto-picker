@@ -16,7 +16,7 @@ def drawMegaNumbersUnique():
     for i in range(6):
         megaDrawnNumbers.append(np.random.choice(megaNumbers, p=megaProbability))
         print("Number " + str(i+1) + ": " + str(megaDrawnNumbers[i]) + " (" + str(round(megaProbability[megaDrawnNumbers[i]-1]*100, 2)) + "%)")
-    megaDrawnNumbers = list(set(megaDrawnNumbers))
+    meg§aDrawnNumbers = list(set(megaDrawnNumbers))
     megaDrawnNumbers.sort()
     return megaDrawnNumbers
 

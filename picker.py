@@ -16,7 +16,7 @@ def drawMegaNumbersUnique():
     for i in range(6):
         megaDrawnNumbers.append(np.random.choice(megaNumbers, p=megaProbability))
         print("Number " + str(i+1) + ": " + str(megaDrawnNumbers[i]) + " (" + str(round(megaProbability[megaDrawnNumbers[i]-1]*100, 2)) + "%)")
-    meg§aDrawnNumbers = list(set(megaDrawnNumbers))
+    megaDrawnNumbers = list(set(megaDrawnNumbers))
     megaDrawnNumbers.sort()
     return megaDrawnNumbers
 
@@ -39,8 +39,10 @@ delim = "\n----------------------------------------------------\n"
 def printMegaNumbersUnique(megaDrawnNumbers):
     print("\nSeu jogo é: " + str(megaDrawnNumbers)[1:-1] + delim)
 
+
 def printLotoNumbersUnique(lotoDrawnNumbers):
     print("\nSeu jogo é: " + str(lotoDrawnNumbers)[1:-1] + delim)
+
 
 printMegaNumbersUnique(drawMegaNumbersUnique())
 printLotoNumbersUnique(drawLotoNumbersUnique())
